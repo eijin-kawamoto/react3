@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 async function fetchVerse(name) {
-    const url = '${name}.txt';
+    const url = `${name}.txt`;
     const response = await fetch(url);
     return response.text();
 }
